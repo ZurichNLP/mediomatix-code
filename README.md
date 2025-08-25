@@ -2,9 +2,8 @@
 
 This is the code for the paper "The Mediomatix Corpus: Parallel Data for Romansh Idioms via Comparable Schoolbooks". 
 
-The automatically aligned dataset can be found -> [here](https://huggingface.co/datasets/ZurichNLP/mediomatix). 
-
-A release of the unaligned _Mediomatix_ schoolbooks is forthcoming.
+- The automatically aligned dataset can be found [here](https://huggingface.co/datasets/ZurichNLP/mediomatix). 
+- The unaligned raw text is found [here](https://huggingface.co/datasets/ZurichNLP/mediomatix-raw).
 
 In this repository, we publish the code to re-build the dataset from scratch and reproduce the experiments in the paper.
 
@@ -179,3 +178,16 @@ Evaluates consensus alignments on validation set:
 - `./mt_experiment/export_finetuning_data.py` – Samples and formats training data for fine-tuning GPT-4o-mini.
 - `./mt_experiment/export_test_sample.py` – Samples test data for MT evaluation.
 - `./mt_experiment/run_translate.py` – Calls the OpenAI API to translate the test segments (example call is in `./mt_experiment/run_gpt-4o.sh`)
+
+## Citation
+```bibtex
+@misc{hopton-et-al-2025-mediomatix,
+      title={The Mediomatix Corpus: Parallel Data for Romansh Idioms via Comparable Schoolbooks},
+      author={Zachary Hopton and Jannis Vamvas and Andrin Büchler and Anna Rutkiewicz and Rico Cathomas and Rico Sennrich},
+      year={2025},
+      eprint={2508.16371},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2508.16371},
+}
+```
